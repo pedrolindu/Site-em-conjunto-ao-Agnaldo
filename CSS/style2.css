@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #0b0f19;
+    color: #f8fafc;
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(15, 23, 42, 0.95);
+    border-bottom: 2px solid #1e293b;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+header h1 span {
+    color: #38bdf8;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Banner Principal */
+.inicio {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #0284c7 100%);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+    border-bottom: 3px solid #38bdf8;
+}
+
+.badge-ao-vivo {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.15);
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.inicio h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    max-width: 800px;
+    margin: 0 auto 15px;
+    animation: aparecer 0.8s ease-out;
+}
+
+.inicio p {
+    color: #e2e8f0;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.inicio a {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: 800;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.inicio a:hover {
+    background: #7dd3fc;
+    transform: scale(1.05);
+}
+
+/* Seções das Ligas */
+.produtos {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #ffffff;
+    display: inline-block;
+    border-bottom: 4px solid #38bdf8;
+    padding-bottom: 6px;
+}
+
+.produtos .subtitulo {
+    color: #94a3b8;
+    margin-bottom: 35px;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Cards dos Jogadores */
+.produto {
+    background: #1e293b;
+    border: 1px solid #334155;
+    width: 270px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 12px 28px rgba(56, 189, 248, 0.2);
+}
+
+.produto img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #0f172a;
+}
+
+.produto h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 16px 0 6px;
+    color: #ffffff;
+}
+
+.produto p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.produto strong {
+    display: block;
+    color: #4ade80;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+/* Botões de Status com cores diferentes */
+button {
+    width: 100%;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.status-transferido {
+    background: #22c55e;
+    color: #052e16;
+}
+
+.status-rumor {
+    background: #facc15;
+    color: #422006;
+}
+
+.status-emprestado {
+    background: #38bdf8;
+    color: #082f49;
+}
+
+/* Rodapé */
+footer {
+    background: #060911;
+    border-top: 1px solid #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* Animação */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .inicio h2 {
+        font-size: 28px;
+    }
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+.btn-topo-direito {
+    width: 38px;
+    height: 38px;
+    padding: 6px;
+    margin-left: 20px;
+    border-radius: 8px;
+    background: #38bdf8;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn-topo-direito:hover {
+    background: #7dd3fc;
+    transform: scale(1.08);
+}
+
+.btn-topo-direito img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
