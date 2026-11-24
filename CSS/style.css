@@ -1,3 +1,4 @@
+/* Reset e Configurações Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-
+/* Cabeçalho e Logo */
 .logo {
     background: linear-gradient(180deg, #2d5a27 0%, #1e3b1a 85%, #4a3525 85%, #3a281b 100%);
     padding: 40px 20px 50px;
@@ -74,7 +75,7 @@ body {
     border-bottom-width: 2px;
 }
 
-
+/* Container Principal */
 .container {
     max-width: 1050px;
     margin: 35px auto;
@@ -84,7 +85,7 @@ body {
     gap: 40px;
 }
 
-
+/* Seção de História (com o seu GIF do livro) */
 .card {
     background-color: #27272a;
     border: 3px solid #3f3f46;
@@ -103,7 +104,7 @@ body {
     width: 95px;
     height: 95px;
     object-fit: contain;
-    image-rendering: pixelated; 
+    image-rendering: pixelated; /* Mantém o pixel art nítido */
     flex-shrink: 0;
 }
 
@@ -119,7 +120,7 @@ body {
     font-size: 1.05rem;
 }
 
-
+/* Títulos das Seções */
 .titulo-secao {
     font-size: 1.7rem;
     color: #facc15;
@@ -129,7 +130,7 @@ body {
     text-shadow: 2px 2px 0 #000;
 }
 
-
+/* Grid de Cards (Modos e Dimensões) */
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -159,14 +160,14 @@ body {
     font-size: 0.95rem;
 }
 
-
+/* Cores temáticas das bordas */
 .verde { border-top-color: #4ade80; }
 .diamante { border-top-color: #22d3ee; }
 .vermelho { border-top-color: #f87171; }
 .ouro { border-top-color: #facc15; }
 .roxo { border-top-color: #c084fc; }
 
-
+/* Lista de Criaturas */
 .lista-mobs {
     display: flex;
     flex-direction: column;
@@ -180,7 +181,7 @@ body {
     border-radius: 4px;
 }
 
-
+/* Caixa de Dicas */
 .dicas-box {
     border-left: 6px solid #facc15;
 }
@@ -196,7 +197,7 @@ body {
     color: #e4e4e7;
 }
 
-
+/* Rodapé */
 .rodape {
     background-color: #121214;
     text-align: center;
@@ -221,7 +222,7 @@ body {
 .botao-canto {
     position: fixed; 
     top: 10px;       
-    right: 20px;    
+    right: 20px;     /* Distância da direita (troque para 'left: 20px;' se quiser no canto esquerdo) */
     background: transparent;
     border: none;
     padding: 0;
