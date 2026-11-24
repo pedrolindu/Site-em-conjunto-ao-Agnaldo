@@ -220,9 +220,9 @@ body {
     background-color: #333;
 }
 .botao-canto {
-    position: fixed; 
-    top: 10px;       
-    right: 20px;     /* Distância da direita (troque para 'left: 20px;' se quiser no canto esquerdo) */
+   
+       
+    right: 20px;     
     background: transparent;
     border: none;
     padding: 0;
@@ -232,10 +232,15 @@ body {
 }
 
 .botao-canto img {
-    width: 65px;     
+    width: 45px;     
     height: auto;
     display: block;
 }
+
+.botao-canto:hover {
+    transform: scale(1.1); 
+}
+
 
 .botao-canto:hover {
     transform: scale(1.1); 
